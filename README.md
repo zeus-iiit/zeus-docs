@@ -4,6 +4,6 @@ Repository to pack up all the data/docs related to setting up private cloud for 
 
 ###### Meta-data:
 
- - Preferred architecture - TripleO
-  - Undercloud (For managing the overcloud)
-  - Overcloud - Controller Node(1) + Compute Nodes(3)
+1. Preferred architecture - TripleO
+    - Undercloud (For managing the overcloud)
+    - Overcloud - Controller Node(1) + Compute Nodes(3)
