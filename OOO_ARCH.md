@@ -1,7 +1,7 @@
 ### Logical View
 
-![logo-png](https://raw.githubusercontent.com/adityaprakash-bobby/private-cloud-docs/master/assets/logical_view.png)
+![logical_view](https://docs.openstack.org/tripleo-docs/latest/_images/logical_view.png)
 
 ### Physical View
 
-![logo-png](https://raw.githubusercontent.com/adityaprakash-bobby/private-cloud-docs/master/assets/physical_view.png)
+![physical_view](https://docs.openstack.org/tripleo-docs/latest/_images/physical_view.png)
