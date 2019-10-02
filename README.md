@@ -11,7 +11,7 @@ Repository to pack up all the data/docs related to setting up private cloud for 
 ###### Essentials links:
 
 1. [Environment setup - Baremetal](https://docs.openstack.org/project-deploy-guide/tripleo-docs/latest/environments/baremetal.html)
-2. [Talk - Deploying using TripleO](Deploying OpenStack at scale with TripleO, Ansible, and Containers)
+2. [Talk - Deploying using TripleO](https://www.youtube.com/watch?v=zfoiFvzuPVc)
 
 
 > **Note:**
