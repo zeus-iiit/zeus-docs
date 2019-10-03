@@ -1,0 +1,58 @@
+{
+    "nodes": [
+        {
+            "name": "node-a",
+            "pm_type": "ipmi",
+            "ports": [
+                {
+                    "address": "fa:16:3e:2a:0e:36",
+                    "physical_network": "ctlplane"
+                }
+            ],
+            "cpu": "2",
+            "memory": "4096",
+            "disk": "40",
+            "arch": "x86_64",
+            "pm_user": "admin",
+            "pm_password": "password",
+            "pm_addr": "10.0.0.8",
+            "_comment": "Room 1 - Rack A - Unit 22/24"
+        },
+        {
+            "name": "node-b",
+            "pm_type": "ipmi",
+            "ports": [
+                {
+                    "address": "fa:16:3e:da:39:c9",
+                    "physical_network": "ctlplane"
+                }
+            ],
+            "cpu": "2",
+            "memory": "4096",
+            "disk": "40",
+            "arch": "x86_64",
+            "pm_user": "admin",
+            "pm_password": "password",
+            "pm_addr": "10.0.0.15",
+            "_comment": "Room 1 - Rack A - Unit 26/28"
+        },
+        {
+            "name": "node-n",
+            "pm_type": "ipmi",
+            "ports": [
+                {
+                    "address": "fa:16:3e:51:9b:68",
+                    "physical_network": "leaf1"
+                }
+            ],
+            "cpu": "2",
+            "memory": "4096",
+            "disk": "40",
+            "arch": "x86_64",
+            "pm_user": "admin",
+            "pm_password": "password",
+            "pm_addr": "10.0.0.16",
+            "_comment": "Room 1 - Rack B - Unit 10/12"
+        }
+    ]
+}
