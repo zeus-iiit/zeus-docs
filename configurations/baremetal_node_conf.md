@@ -21,3 +21,33 @@ openstack baremetal introspection bulk start
 ```bash
 openstack baremetal node provide <NAME OR UUID>
 ```
+
+### Node Cleaning
+
+It is the erasing of previous tenants data before the first enrollment of hardware and after every unprovisioning. Enable automated cleaning by changing the following in `undercloud.conf`
+
+```apacheconf
+[DEFAULT]
+clean_nodes = True
+```
+
+###### For manual cleaning:
+
+The nodes must be in **manageable** state and cleaning in done on request.
+
+```bash
+# If the node is not in the manageable state, move it there:
+openstack baremetal node manage <UUID or name>
+
+# Run manual cleaning on a specific node:
+openstack overcloud node clean <UUID or name>
+
+# or all manageable nodes:
+openstack overcloud node clean --all-manageable
+
+# Make the node available again:
+openstack overcloud node provide <UUID or name>
+
+# or provide all manageable nodes:
+openstack overcloud node provide --all-manageable
+```
