@@ -51,3 +51,41 @@ openstack overcloud node provide <UUID or name>
 # or provide all manageable nodes:
 openstack overcloud node provide --all-manageable
 ```
+
+### BIOS Settings
+
+###### Apply BIOS ssettings
+
+```bash
+# To apply given BIOS configuration to all manageable nodes:
+openstack overcloud node bios configure --configuration <..> --all-manageable
+
+# To apply given BIOS configuration to specified nodes:
+openstack overcloud node bios configure --configuration <..> node_uuid1 node_uuid2 ..
+```
+The configuration needs to be a JSON/YAML string (can be stroed in a file too) in the following form:
+
+```
+{
+  "settings": [
+    {
+      "name": "setting name",
+      "value": "setting value"
+    },
+    {
+      "name": "setting name",
+      "value": "setting value"
+    },
+    ..
+  ]
+}
+```
+
+###### Reset BIOS ssettings
+```bash
+# To reset the BIOS configuration to factory default on specified nodes:
+openstack overcloud node bios reset --all-manageable
+
+# To reset the BIOS configuration on specified nodes:
+openstack overcloud node bios reset node_uuid1 node_uuid2 ..
+```
