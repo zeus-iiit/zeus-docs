@@ -105,14 +105,14 @@ openstack baremetal node set <UUID> --property local_gb=<NEW VALUE>
 ```
 New `local_gb` value should be **1GiB less than** the real disk size for partioning.
 
-### Auto setting of root device
+###### Auto setting of root device
 
 ```bash
 openstack overcloud node configure --all-manageable --root-device=sdb,sdc,vda
 ```
 This depends on intospection, if disk devices are changed then introspection must be rerun before running this command.
 
-### Using introspection data to find the root device
+###### Using introspection data to find the root device
 
 ```bash
 openstack baremetal introspection data save fdf975ae-6bd7-493f-a0b9-a0a4667b8ef3 | jq '.inventory.disks'
