@@ -13,4 +13,7 @@ subscription-manager suscribe
 
 # List all avaiable repos:
 subscription manager repos
+
+# Enable repo for server
+subscription-manager repos --enable <repo-ID>
 ```
