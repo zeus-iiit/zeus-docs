@@ -1,4 +1,4 @@
-# Congiguration for switch
+# Configuration for switch
 
 Our switch will be having 2 VLANs - one for provisioning network and the other for the public/external network. The provisioning network will be used by the undercloud to provide DHCP service and PXE manage the bare metal servers in the Overcloud, while the external network will be used to remotely access the servers. The external network needs to connected to an external DHCP service.
 
